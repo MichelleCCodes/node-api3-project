@@ -1,4 +1,6 @@
 const express = require('express');
+const Users = require('./users-model');
+const mw = require('../middleware/middleware');
 
 const router = express.Router();
 
@@ -39,3 +41,4 @@ router.post('/:id/posts', (req, res) => {
 });
 
 // do not forget to export the router
+module.exports = router;
